@@ -1,3 +1,39 @@
-.text-heavy {
+.title {
+  color: blue;
+
+}
+
+.hover-expand img:hover {
+  transform: scale(1.03);
+  transistion: all ease;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000000;
+}
+
+.text {
+  background-color: black;
+}
+
+/*Chaining Selectors*/
+.text.read {
+  color: red;
+}
+
+.text.unread {
+  color: green;
+  font-family: cursive;
+}
+
+.lorem-ipsum {
+   text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#parent {
+  color: red;
+}
+
+.child {
   color: blue;
 }
