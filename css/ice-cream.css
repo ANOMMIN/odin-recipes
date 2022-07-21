@@ -1,27 +1,61 @@
+* {
+  padding: 10px;
+  border: 10px;
+  margin: 5px;
+}
+
+
+/* Alternative box model */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*End of box model*/
+
+.link-area a {
+  background-color: #FFFFE0;
+  padding: 50px;
+  display: inline-block;
+}
+
+.link-area a:hover {
+  background-color: #FFCC00; 
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
 .title {
   color: blue;
-
+  font-family: "Gayathri", sans-serif;
 }
 
 .hover-expand img:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
   transistion: all ease;
   border-radius: 5px;
   box-shadow: 0 0 5px #000000;
 }
 
 .text {
-  background-color: black;
+  font-family: "Gayathri", sans-serif;
 }
 
 /*Chaining Selectors*/
 .text.read {
   color: red;
+  background-color: #FFCCCB;
 }
 
 .text.unread {
   color: green;
-  font-family: cursive;
+  background-color: #90EE90;
 }
 
 .lorem-ipsum {
